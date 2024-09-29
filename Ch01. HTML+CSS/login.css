@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("./background-image.svg");
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.box {
+    width: 800px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    background-color: rgb(255, 255, 255, 0.6);
+    border-radius: 15px;
+    margin-top: -200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box h1 {
+    font-size: 40px;
+    display: block;
+    text-align: center;
+}
+
+
+.box h1::after {
+    content: "";
+    display: block;
+    width: 400px;
+    height: 1px; 
+    background-color: white;
+    margin-top: 10px; 
+}
+
+
+#id, #password, #login-btn {
+    width: 300px; 
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+#id, #password {
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+}
+
+input::placeholder {
+    font-size: 15px;
+    color: white;
+}
+
+#login-btn {
+    margin-top: 20px;
+    width: 300px;
+    height: 60px;
+    border-radius: 10px;
+    border: none;
+    background-color: black;
+    font-size: 20px;
+    color: white;
+}
+
+.others {
+    margin-top: 50px;
+}
+
+#sign-up, #find {
+    color: black;
+    text-decoration-line: none;
+}
+
+#sign-up {
+    padding-right: 20px;
+}
+
+#find {
+    padding-left: 20px;
+}
